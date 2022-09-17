@@ -2,7 +2,9 @@ import React from 'react'
 
 function admin() {
     return (
-        <div>admin</div>
+        <div>
+            <h1 style={{ width: '50%', margin: "10vh auto", textAlign: 'center' }}>This is admin page</h1>
+        </div>
     )
 }
 

@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React from 'react';
 
 const User = ({ user }) => {
@@ -12,9 +13,12 @@ const User = ({ user }) => {
                     minHeight: '100vh'
                 }}
             >
-                <h2>Name:{user.name}</h2>
+                <h2>Name: {user.name}</h2>
                 <p>Email: {user.email}</p>
                 <p>Website: {user.website}</p>
+                <Link href={`/users`}>
+                    <button>Back</button>
+                </Link>
             </article>
         </section>
     );
